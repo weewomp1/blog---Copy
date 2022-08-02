@@ -1,0 +1,211 @@
+* ,
+::before,
+::after{
+  font-family: 'Roboto Mono', monospace;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --trx: -10rem;
+}
+body {
+  overflow-x: hidden;
+}
+.giggacontainer{
+  display: flex;
+  transform: translateX();
+  transition: transform 1s ease-out;
+  align-items: center;
+  justify-content:flex-start;
+}
+.supercontainer{
+  width: 100vw;
+  min-width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  transform: translateX();
+  transition: transform 1s ease-out;
+}
+.container{
+  background-color: rgba(0, 0, 0, .1);
+  margin-top: 5rem;
+  width: 95vw;
+  min-height: 100vh;
+  width: 90%;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.nav {
+  position: fixed;
+  margin-left: 75vw;
+  top: 10rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  z-index: 100;
+  transform: rotate(0deg);
+  transition: transform .5s;
+}
+.nav .se {
+  width: 10rem;
+  height: 1rem;
+
+  border-radius: 2px;
+  background-color: black;
+  transition: background-color 1s;
+}
+.titlecard{
+  display: flex;
+  flex-direction: column;
+  gap: .4rem;
+  width: 100%;
+  background-color: rgba(0, 0, 0, .025);
+}
+.titlecard h1 {
+  font-size: 6em;
+}
+.titlecard h2 {
+  font-size: 2em;
+}
+
+.posts {
+  margin-left: .5rem;
+  width: 75%;
+  background-color: rgba(0, 0, 0, .05);
+}
+.post {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: .25rem;
+  padding: 1rem;
+}
+.post .statuses {
+  display: flex;
+  gap: 2rem;
+  font-size: 1.5em;
+}
+.post .like {
+  cursor: pointer;
+  color: green;
+}
+.post .dislike {
+  cursor: pointer;
+  color: red;
+}
+.post p {
+  max-height: 60rem;
+  font-size: 1.25em;
+  max-width: 60rem;
+}
+.post h2 {
+  background-color: rgba(255, 255, 255, .1);
+  width: 100%;
+  font-size: 2em;
+}
+.post h3 {
+  font-size: 1.5em;
+}
+.navigation {
+  text-align: center;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 300vh;
+  background-color: rgba(255, 255, 255, 1);
+  min-width: 100vw;
+  z-index: 1;
+  transform: translateX(100vw) translateY(-58.275vh);
+  transition: transform 1s ease-out;
+  flex-direction: column;
+}
+.navigation .contactpage {
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.25);
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.navigation .buttonarea {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, .25);
+}
+.submitform {
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, .025);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.navigation ul {
+  list-style: none;
+}
+.navigation ul li {
+  cursor: pointer;
+  background-color: rgba(200, 255, 200, .25);
+  padding: 5rem;
+  border-radius: 4rem;
+  margin: 10rem;
+  box-shadow: 28px 20px 24px 3px rgba(0,0,0,0.48);
+-webkit-box-shadow: 28px 20px 24px 3px rgba(0,0,0,0.48);
+-moz-box-shadow: 28px 20px 24px 3px rgba(0,0,0,0.48);
+transition: color .1s;
+}
+.navigation ul li:hover{
+  color:lightgreen;
+}
+.navigation .submitform input {
+  border: none;
+  border-radius: .25rem;
+  outline: none;
+}
+input[type=text]:focus {
+  background-color: lightblue;
+  border: none;
+  outline: none;
+}
+.submitform form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 4rem;
+}
+.submitform form .submitbutton {
+  padding: 2rem;
+  cursor: pointer;
+  transition: all .075s ease-out;
+}
+.submitform form .titleinput {
+  font-size: 2em;
+}
+.submitform form .authorinput{
+  font-size: 1.5em;
+}
+.submitform form .contentinput{
+  font-size: 1.25em;
+  min-height: 20rem;
+  min-width: 45rem;
+}
+.submitform form .submitbutton:hover {
+  color: white;
+}
