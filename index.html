@@ -1,173 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="styles.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-  <script src="script.js" defer></script>  
-<title>Devblog</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
+  <script src="database.js" type="module"></script>
+  <script src="script.js" type="module"></script>
+  <script type="text/javascript">
+
+  </script>
+  <title>Devblog</title>
 </head>
+
 <body>
 
-<div class="giggacontainer">
-  <div class="supercontainer">
+  <div class="giggacontainer">
+    <div class="supercontainer">
 
-    <div class="container">
+      <div class="container">
 
-      <!-- titlecard -->
+        <!-- titlecard -->
 
-      <div class="titlecard">
-        <h1>Devblog</h1>
-        <h2>A place for developers to talk about their endeavors.</h2>
-        <h3><strong>Posts:</strong></h3>
-      </div>
-      
-      <!-- posts vvv -->
-
-      <div class="posts">
-        <div class="post">
-
-          <h2>Title</h2>
-          <h3>Author, date and time</h3>       
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
-            pariatur. Excepteur sint occaecat cupidatat non proident, 
-            sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-          <div class="statuses">
-            <div class="like">👍 0</div>
-            <div class="dislike">👎 0</div>
-          </div>
+        <div class="titlecard">
+          <h1>Devblog</h1>
+          <h2>A place for developers to talk about their endeavors.</h2>
+          <h3><strong>Posts:</strong></h3>
         </div>
 
-        <div class="post post2">
+        <!-- posts vvv -->
 
-          <h2>Title</h2>
-          <h3>Author, date and time</h3>       
-          <p>
-            post content
-          </p>
-          <div class="statuses">
-            <div class="like">👍 0</div>
-            <div class="dislike">👎 0</div>
+        <div id="posts" class="posts">
+          <!-- <div class="post">
+
+            <h2>Title</h2>
+            <h3>Author, date and time</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+              pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <div class="statuses">
+              <div class="like">👍 0</div>
+              <div class="dislike">👎 0</div>
+            </div>
           </div>
+
+          <div class="post post2">
+
+            <h2>Title</h2>
+            <h3>Author, date and time</h3>
+            <p>
+              post content
+            </p>
+            <div class="statuses">
+              <div class="like">👍 0</div>
+              <div class="dislike">👎 0</div>
+            </div>
+          </div>
+
+          <div class="post post2">
+
+            <h2>Title</h2>
+            <h3>Author, date and time</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+              pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <div class="statuses">
+              <div class="like">👍 0</div>
+              <div class="dislike">👎 0</div>
+            </div>
+          </div>
+
+          <div class="post post2">
+
+            <h2>Title</h2>
+            <h3>Author, date and time</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+              pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <div class="statuses">
+              <div class="like">👍 0</div>
+              <div class="dislike">👎 0</div>
+            </div>
+          </div>
+
+          <div class="post post2">
+
+            <h2>Title</h2>
+            <h3>Author, date and time</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+              pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <div class="statuses">
+              <div class="like">👍 0</div>
+              <div class="dislike">👎 0</div>
+            </div>
+          </div>
+
+
+          <div class="post post2">
+
+            <h2>Title</h2>
+            <h3>Author, date and time</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+              pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <div class="statuses">
+              <div class="like">👍 0</div>
+              <div class="dislike">👎 0</div>
+            </div>
+          </div> -->
         </div>
 
-        <div class="post post2">
+        <!-- posts ^^^ -->
 
-          <h2>Title</h2>
-          <h3>Author, date and time</h3>       
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
-            pariatur. Excepteur sint occaecat cupidatat non proident, 
-            sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-          <div class="statuses">
-            <div class="like">👍 0</div>
-            <div class="dislike">👎 0</div>
-          </div>
+        <div class="footer">
+
         </div>
-
-        <div class="post post2">
-
-          <h2>Title</h2>
-          <h3>Author, date and time</h3>       
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
-            pariatur. Excepteur sint occaecat cupidatat non proident, 
-            sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-          <div class="statuses">
-            <div class="like">👍 0</div>
-            <div class="dislike">👎 0</div>
-          </div>
-        </div>
-
-        <div class="post post2">
-
-          <h2>Title</h2>
-          <h3>Author, date and time</h3>       
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
-            pariatur. Excepteur sint occaecat cupidatat non proident, 
-            sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-          <div class="statuses">
-            <div class="like">👍 0</div>
-            <div class="dislike">👎 0</div>
-          </div>
-        </div>
-
-
-        <div class="post post2">
-
-          <h2>Title</h2>
-          <h3>Author, date and time</h3>       
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
-            pariatur. Excepteur sint occaecat cupidatat non proident, 
-            sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-          <div class="statuses">
-            <div class="like">👍 0</div>
-            <div class="dislike">👎 0</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- posts ^^^ -->
-
-      <div class="footer">
 
       </div>
 
     </div>
 
-  </div>
+    <div class="navigation">
+      <div class="submitform">
+        <form>
+          <input type="text" placeholder="Title" class="titleinput">
+          <input type="text" placeholder="Author Name" class="authorinput">
+          <textarea type="text" placeholder="Content" class="contentinput"></textarea>
+          <input type="submit" value="Post" class="submitbutton">
+        </form>
+      </div>
 
-  <div class="navigation">
-    <div class="submitform">
-      <form>
-        <input type="text" placeholder="Title" class="titleinput">
-        <input type="text" placeholder="Author Name" class="authorinput">
-        <textarea type="text" placeholder="Content" class="contentinput"></textarea>
-        <input type="submit" value="Post" class="submitbutton">
-      </form>
-    </div>
+      <div class="buttonarea">
+        <ul class="navi">
+          <li class="createpost">Create Post</li>
+          <li class="contact">Contact</li>
+        </ul>
+      </div>
 
-    <div class="buttonarea">
-      <ul class="navi">
-        <li class="createpost">Create Post</li>
-        <li class="contact">Contact</li>
-      </ul>
-    </div>
-
-    <div class="contactpage">
-      <!--
+      <div class="contactpage">
+        <!--
       <h2>
         Created by: 
           Conor H,
@@ -175,15 +183,16 @@
         </h2>
     </div>
     -->
-  </div>
+      </div>
 
-</div>
+    </div>
 
-<div class="nav">
-  <div class="a se"></div>
-  <div class="b se"></div>
-  <div class="c se"></div>
-</div>
+    <div class="nav">
+      <div class="a se"></div>
+      <div class="b se"></div>
+      <div class="c se"></div>
+    </div>
 
 </body>
+
 </html>
