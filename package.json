@@ -1,0 +1,27 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "database.js",
+  "devDependencies": {
+    "http-server": "14.1.1"
+  },
+  "dependencies": {
+    "express": "4.18.1",
+    "cors": "2.8.5"
+  },
+  "scripts": {
+    "client": "http-server",
+    "server": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/weewomp1/blog---Copy.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/weewomp1/blog---Copy/issues"
+  },
+  "homepage": "https://github.com/weewomp1/blog---Copy#readme"
+}

@@ -1,7 +1,3 @@
-import database from "./database.js";
-
-const {posts} = database;
-
 const displayPost = ({title, author, time, thumbsUp, thumbsDown, content}) => {
   const post = document.createElement('div');
   post.innerHTML = `<div class="post post2">
@@ -19,9 +15,11 @@ const displayPost = ({title, author, time, thumbsUp, thumbsDown, content}) => {
   document.getElementById('posts').appendChild(post);
 };
 
-window.onload = () => {
+window.onload = async () => {
+  console.log('About to fetch');
+  const respose = await fetch('http://localhost:3000/data');
 
-  console.log('Posts', posts);
+  const posts = await respose.json()
 
   for(let i = 0; i < posts.length; i++){
     displayPost(posts[i]);
@@ -82,7 +80,3 @@ function scrollNavDown() {
   navHorizontalScroll = 0;
   navigation.setAttribute('style', `transform: translateX(${navHorizontalScroll}vw)  translateY(${navVerticalScroll}vh)`)
 }
-
-export default {
-  cheese: 'danish'
-};
